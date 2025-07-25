@@ -16,5 +16,10 @@ namespace miPrimerProyectoCsharp
         {
             InitializeComponent();
         }
+
+        private void btnSaludar_Click(object sender, EventArgs e)
+        {
+            lblSaludar.Text = "¡Hola " + txtNombre.Text + " !!!!";
+        }
     }
 }

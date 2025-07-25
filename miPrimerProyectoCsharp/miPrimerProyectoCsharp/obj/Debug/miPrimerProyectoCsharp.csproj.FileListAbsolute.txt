@@ -8,3 +8,4 @@ C:\Users\jimmy\Desktop\Program1-semi-2025\miPrimerProyectoCsharp\miPrimerProyect
 C:\Users\jimmy\Desktop\Program1-semi-2025\miPrimerProyectoCsharp\miPrimerProyectoCsharp\obj\Debug\miPrimerProyectoCsharp.csproj.CoreCompileInputs.cache
 C:\Users\jimmy\Desktop\Program1-semi-2025\miPrimerProyectoCsharp\miPrimerProyectoCsharp\obj\Debug\miPrimerProyectoCsharp.exe
 C:\Users\jimmy\Desktop\Program1-semi-2025\miPrimerProyectoCsharp\miPrimerProyectoCsharp\obj\Debug\miPrimerProyectoCsharp.pdb
+C:\Users\jimmy\Desktop\Program1-semi-2025\miPrimerProyectoCsharp\miPrimerProyectoCsharp\obj\Debug\miPrimerProyectoCsharp.exe.config
