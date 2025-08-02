@@ -14,12 +14,23 @@ namespace miPrimerProyectoCsharp
     {
         public Form1()
         {
-            InitializeComponent();
+            InitializeComponent(); // Este método es esencial para que se cargue el diseño
         }
-
-        private void btnSaludar_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
-            lblSaludar.Text = "¡Hola " + txtNombre.Text + " !!!!";
+
         }
+        private void btnCalcular_Click(object sender, EventArgs e)
+        {
+            double num1, num2, respuesta;
+            num1 = double.Parse(txtNum1.Text);
+            num2 = double.Parse(txtNum2.Text);
+            respuesta = num1 + num2;
+
+            // Concatenacion de texto y un double
+            lblRespuesta.Text = "Respuesta: " + respuesta;
+
+        }
+        
     }
 }
