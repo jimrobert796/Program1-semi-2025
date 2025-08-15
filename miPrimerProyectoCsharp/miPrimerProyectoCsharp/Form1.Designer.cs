@@ -28,240 +28,126 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtNum1 = new System.Windows.Forms.TextBox();
-            this.lblNum1 = new System.Windows.Forms.Label();
-            this.btnCalcular = new System.Windows.Forms.Button();
-            this.lblNum2 = new System.Windows.Forms.Label();
-            this.txtNum2 = new System.Windows.Forms.TextBox();
-            this.lblRespuesta = new System.Windows.Forms.Label();
-            this.cboOpciones = new System.Windows.Forms.ComboBox();
-            this.grbOpciones = new System.Windows.Forms.GroupBox();
-            this.optExponente = new System.Windows.Forms.RadioButton();
-            this.optFactorial = new System.Windows.Forms.RadioButton();
-            this.optPrimo = new System.Windows.Forms.RadioButton();
-            this.optDivision = new System.Windows.Forms.RadioButton();
-            this.optMultiplicacion = new System.Windows.Forms.RadioButton();
-            this.optResta = new System.Windows.Forms.RadioButton();
-            this.optSuma = new System.Windows.Forms.RadioButton();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.btnCalcularOpciones = new System.Windows.Forms.Button();
-            this.grbOpciones.SuspendLayout();
+            this.lblSueldo = new System.Windows.Forms.Label();
+            this.txtSueldo = new System.Windows.Forms.TextBox();
+            this.btnCalcular = new System.Windows.Forms.Button();
+            this.lblISSS = new System.Windows.Forms.Label();
+            this.lblAFP = new System.Windows.Forms.Label();
+            this.lblISR = new System.Windows.Forms.Label();
+            this.lblSueldoNeto = new System.Windows.Forms.Label();
+            this.lblTotalDeduciones = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // txtNum1
+            // lblSueldo
             // 
-            this.txtNum1.Location = new System.Drawing.Point(124, 34);
-            this.txtNum1.Name = "txtNum1";
-            this.txtNum1.Size = new System.Drawing.Size(100, 20);
-            this.txtNum1.TabIndex = 0;
+            this.lblSueldo.AutoSize = true;
+            this.lblSueldo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSueldo.Location = new System.Drawing.Point(50, 47);
+            this.lblSueldo.Name = "lblSueldo";
+            this.lblSueldo.Size = new System.Drawing.Size(82, 24);
+            this.lblSueldo.TabIndex = 0;
+            this.lblSueldo.Text = "Sueldo:";
             // 
-            // lblNum1
+            // txtSueldo
             // 
-            this.lblNum1.AutoSize = true;
-            this.lblNum1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNum1.Location = new System.Drawing.Point(60, 38);
-            this.lblNum1.Name = "lblNum1";
-            this.lblNum1.Size = new System.Drawing.Size(48, 16);
-            this.lblNum1.TabIndex = 1;
-            this.lblNum1.Text = "Num 1:";
+            this.txtSueldo.Location = new System.Drawing.Point(155, 47);
+            this.txtSueldo.Name = "txtSueldo";
+            this.txtSueldo.Size = new System.Drawing.Size(100, 20);
+            this.txtSueldo.TabIndex = 1;
             // 
             // btnCalcular
             // 
-            this.btnCalcular.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcular.Location = new System.Drawing.Point(97, 186);
+            this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcular.Location = new System.Drawing.Point(341, 64);
             this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(99, 48);
+            this.btnCalcular.Size = new System.Drawing.Size(155, 65);
             this.btnCalcular.TabIndex = 2;
             this.btnCalcular.Text = "Calcular";
-            this.btnCalcular.UseVisualStyleBackColor = false;
+            this.btnCalcular.UseVisualStyleBackColor = true;
             this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
-            // lblNum2
+            // lblISSS
             // 
-            this.lblNum2.AutoSize = true;
-            this.lblNum2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNum2.Location = new System.Drawing.Point(60, 74);
-            this.lblNum2.Name = "lblNum2";
-            this.lblNum2.Size = new System.Drawing.Size(48, 16);
-            this.lblNum2.TabIndex = 4;
-            this.lblNum2.Text = "Num 2:";
+            this.lblISSS.AutoSize = true;
+            this.lblISSS.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblISSS.Location = new System.Drawing.Point(50, 84);
+            this.lblISSS.Name = "lblISSS";
+            this.lblISSS.Size = new System.Drawing.Size(77, 24);
+            this.lblISSS.TabIndex = 3;
+            this.lblISSS.Text = "ISSS: ?";
             // 
-            // txtNum2
+            // lblAFP
             // 
-            this.txtNum2.Location = new System.Drawing.Point(124, 70);
-            this.txtNum2.Name = "txtNum2";
-            this.txtNum2.Size = new System.Drawing.Size(100, 20);
-            this.txtNum2.TabIndex = 3;
+            this.lblAFP.AutoSize = true;
+            this.lblAFP.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAFP.Location = new System.Drawing.Point(50, 120);
+            this.lblAFP.Name = "lblAFP";
+            this.lblAFP.Size = new System.Drawing.Size(73, 24);
+            this.lblAFP.TabIndex = 4;
+            this.lblAFP.Text = "AFP: ?";
             // 
-            // lblRespuesta
+            // lblISR
             // 
-            this.lblRespuesta.AutoSize = true;
-            this.lblRespuesta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRespuesta.ForeColor = System.Drawing.Color.DarkGreen;
-            this.lblRespuesta.Location = new System.Drawing.Point(67, 145);
-            this.lblRespuesta.Name = "lblRespuesta";
-            this.lblRespuesta.Size = new System.Drawing.Size(86, 16);
-            this.lblRespuesta.TabIndex = 5;
-            this.lblRespuesta.Text = "Respuesta: ?";
+            this.lblISR.AutoSize = true;
+            this.lblISR.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblISR.Location = new System.Drawing.Point(50, 155);
+            this.lblISR.Name = "lblISR";
+            this.lblISR.Size = new System.Drawing.Size(65, 24);
+            this.lblISR.TabIndex = 5;
+            this.lblISR.Text = "ISR: ?";
             // 
-            // cboOpciones
+            // lblSueldoNeto
             // 
-            this.cboOpciones.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboOpciones.FormattingEnabled = true;
-            this.cboOpciones.Items.AddRange(new object[] {
-            "Suma",
-            "Resta",
-            "Multiplicacion",
-            "Division",
-            "Primo ",
-            "Factorial"});
-            this.cboOpciones.Location = new System.Drawing.Point(430, 51);
-            this.cboOpciones.Name = "cboOpciones";
-            this.cboOpciones.Size = new System.Drawing.Size(143, 21);
-            this.cboOpciones.TabIndex = 6;
+            this.lblSueldoNeto.AutoSize = true;
+            this.lblSueldoNeto.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSueldoNeto.Location = new System.Drawing.Point(50, 226);
+            this.lblSueldoNeto.Name = "lblSueldoNeto";
+            this.lblSueldoNeto.Size = new System.Drawing.Size(149, 24);
+            this.lblSueldoNeto.TabIndex = 6;
+            this.lblSueldoNeto.Text = "Sueldo Neto: ?";
             // 
-            // grbOpciones
+            // lblTotalDeduciones
             // 
-            this.grbOpciones.Controls.Add(this.optExponente);
-            this.grbOpciones.Controls.Add(this.optFactorial);
-            this.grbOpciones.Controls.Add(this.optPrimo);
-            this.grbOpciones.Controls.Add(this.optDivision);
-            this.grbOpciones.Controls.Add(this.optMultiplicacion);
-            this.grbOpciones.Controls.Add(this.optResta);
-            this.grbOpciones.Controls.Add(this.optSuma);
-            this.grbOpciones.Location = new System.Drawing.Point(244, 34);
-            this.grbOpciones.Name = "grbOpciones";
-            this.grbOpciones.Size = new System.Drawing.Size(145, 217);
-            this.grbOpciones.TabIndex = 8;
-            this.grbOpciones.TabStop = false;
-            this.grbOpciones.Text = "Opciones";
-            // 
-            // optExponente
-            // 
-            this.optExponente.AutoSize = true;
-            this.optExponente.Location = new System.Drawing.Point(7, 112);
-            this.optExponente.Name = "optExponente";
-            this.optExponente.Size = new System.Drawing.Size(76, 17);
-            this.optExponente.TabIndex = 7;
-            this.optExponente.Text = "Exponente";
-            this.optExponente.UseVisualStyleBackColor = true;
-            // 
-            // optFactorial
-            // 
-            this.optFactorial.AutoSize = true;
-            this.optFactorial.Location = new System.Drawing.Point(7, 158);
-            this.optFactorial.Name = "optFactorial";
-            this.optFactorial.Size = new System.Drawing.Size(65, 17);
-            this.optFactorial.TabIndex = 5;
-            this.optFactorial.Text = "Factorial";
-            this.optFactorial.UseVisualStyleBackColor = true;
-            // 
-            // optPrimo
-            // 
-            this.optPrimo.AutoSize = true;
-            this.optPrimo.Location = new System.Drawing.Point(7, 135);
-            this.optPrimo.Name = "optPrimo";
-            this.optPrimo.Size = new System.Drawing.Size(51, 17);
-            this.optPrimo.TabIndex = 4;
-            this.optPrimo.Text = "Primo";
-            this.optPrimo.UseVisualStyleBackColor = true;
-            // 
-            // optDivision
-            // 
-            this.optDivision.AutoSize = true;
-            this.optDivision.Location = new System.Drawing.Point(7, 89);
-            this.optDivision.Name = "optDivision";
-            this.optDivision.Size = new System.Drawing.Size(62, 17);
-            this.optDivision.TabIndex = 3;
-            this.optDivision.Text = "Division";
-            this.optDivision.UseVisualStyleBackColor = true;
-            // 
-            // optMultiplicacion
-            // 
-            this.optMultiplicacion.AutoSize = true;
-            this.optMultiplicacion.Location = new System.Drawing.Point(7, 66);
-            this.optMultiplicacion.Name = "optMultiplicacion";
-            this.optMultiplicacion.Size = new System.Drawing.Size(89, 17);
-            this.optMultiplicacion.TabIndex = 2;
-            this.optMultiplicacion.Text = "Multiplicacion";
-            this.optMultiplicacion.UseVisualStyleBackColor = true;
-            // 
-            // optResta
-            // 
-            this.optResta.AutoSize = true;
-            this.optResta.Location = new System.Drawing.Point(7, 43);
-            this.optResta.Name = "optResta";
-            this.optResta.Size = new System.Drawing.Size(53, 17);
-            this.optResta.TabIndex = 1;
-            this.optResta.Text = "Resta";
-            this.optResta.UseVisualStyleBackColor = true;
-            // 
-            // optSuma
-            // 
-            this.optSuma.AutoSize = true;
-            this.optSuma.Checked = true;
-            this.optSuma.Location = new System.Drawing.Point(7, 20);
-            this.optSuma.Name = "optSuma";
-            this.optSuma.Size = new System.Drawing.Size(52, 17);
-            this.optSuma.TabIndex = 0;
-            this.optSuma.TabStop = true;
-            this.optSuma.Text = "Suma";
-            this.optSuma.UseVisualStyleBackColor = true;
-            // 
-            // btnCalcularOpciones
-            // 
-            this.btnCalcularOpciones.Location = new System.Drawing.Point(475, 169);
-            this.btnCalcularOpciones.Name = "btnCalcularOpciones";
-            this.btnCalcularOpciones.Size = new System.Drawing.Size(75, 23);
-            this.btnCalcularOpciones.TabIndex = 9;
-            this.btnCalcularOpciones.Text = "Calcular";
-            this.btnCalcularOpciones.UseVisualStyleBackColor = true;
-            this.btnCalcularOpciones.Click += new System.EventHandler(this.btnCalcularOpciones_Click);
+            this.lblTotalDeduciones.AutoSize = true;
+            this.lblTotalDeduciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalDeduciones.Location = new System.Drawing.Point(50, 192);
+            this.lblTotalDeduciones.Name = "lblTotalDeduciones";
+            this.lblTotalDeduciones.Size = new System.Drawing.Size(195, 24);
+            this.lblTotalDeduciones.TabIndex = 7;
+            this.lblTotalDeduciones.Text = "Total deduciones: ?";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(645, 263);
-            this.Controls.Add(this.btnCalcularOpciones);
-            this.Controls.Add(this.grbOpciones);
-            this.Controls.Add(this.cboOpciones);
-            this.Controls.Add(this.lblRespuesta);
-            this.Controls.Add(this.lblNum2);
-            this.Controls.Add(this.txtNum2);
+            this.ClientSize = new System.Drawing.Size(603, 290);
+            this.Controls.Add(this.lblTotalDeduciones);
+            this.Controls.Add(this.lblSueldoNeto);
+            this.Controls.Add(this.lblISR);
+            this.Controls.Add(this.lblAFP);
+            this.Controls.Add(this.lblISSS);
             this.Controls.Add(this.btnCalcular);
-            this.Controls.Add(this.lblNum1);
-            this.Controls.Add(this.txtNum1);
+            this.Controls.Add(this.txtSueldo);
+            this.Controls.Add(this.lblSueldo);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.grbOpciones.ResumeLayout(false);
-            this.grbOpciones.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txtNum1;
-        private System.Windows.Forms.Label lblNum1;
-        private System.Windows.Forms.Button btnCalcular;
-        private System.Windows.Forms.Label lblNum2;
-        private System.Windows.Forms.TextBox txtNum2;
-        private System.Windows.Forms.Label lblRespuesta;
-        private System.Windows.Forms.ComboBox cboOpciones;
-        private System.Windows.Forms.GroupBox grbOpciones;
-        private System.Windows.Forms.RadioButton optFactorial;
-        private System.Windows.Forms.RadioButton optPrimo;
-        private System.Windows.Forms.RadioButton optDivision;
-        private System.Windows.Forms.RadioButton optMultiplicacion;
-        private System.Windows.Forms.RadioButton optResta;
-        private System.Windows.Forms.RadioButton optSuma;
-        private System.Windows.Forms.RadioButton optExponente;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.Button btnCalcularOpciones;
+        private System.Windows.Forms.Label lblSueldo;
+        private System.Windows.Forms.TextBox txtSueldo;
+        private System.Windows.Forms.Button btnCalcular;
+        private System.Windows.Forms.Label lblISSS;
+        private System.Windows.Forms.Label lblAFP;
+        private System.Windows.Forms.Label lblISR;
+        private System.Windows.Forms.Label lblSueldoNeto;
+        private System.Windows.Forms.Label lblTotalDeduciones;
     }
 }
 
