@@ -24,6 +24,7 @@ namespace miPrimerProyectoCsharp
             Volumen
             Almacenamiento
             Tiempo
+            Area
          */
 
         String[][] etiquetas = new string[][] {
@@ -33,6 +34,7 @@ namespace miPrimerProyectoCsharp
             new string[]{"Galon Us", "Litros", "Pinta Us", "Ml"}, //Volumen
             new string[]{"GB", "Bit", "Byte", "KB", "MG", "TB"}, //Almacenamiento
             new string[]{"Dia", "Segundos", "Minutos", "Horas", "Semana", "Meses", "Año"}, //Tiempo
+            new string[]{"Km^2","Metro", "Milla", "Yarda", "Pie", "Pulgada", "Hectaria"}, //Area 
         };
 
         // Matriz con los valores de conversion de uno el inical a los demas
@@ -43,26 +45,45 @@ namespace miPrimerProyectoCsharp
             new double []{1, 16, 453.592, 0.453592, 0.01, 0.001,0.0005}, //Masa
             new double []{1, 3.78541, 8, 3785.41}, //Volumen
             new double []{1, 8e+9, 1e+9, 1e+6, 1000, 0.001}, //Almacenamiento
-            new double []{1, 86400, 1440, 24, 0.142857, 0.0328767, 0.00273973} //Tiempo
+            new double []{1, 86400, 1440, 24, 0.142857, 0.0328767, 0.00273973}, //Tiempo
+            new double []{1, 1e+6, 0.386102, 1.196e+6, 1.076e+7, 1.55e+9, 100 } //Tiempo
         };
 
         private void btnCalcular_Click(object sender, EventArgs e){
+            try
+            {
+                double cantidad = double.Parse(txtCantidadConversor.Text);
 
-            double cantidad = double.Parse(txtCantidadConversor.Text);
+                int tipo = cboTipoConversor.SelectedIndex; // Tipo de conversion
+                int de = cboDeConversor.SelectedIndex; // De que unidad
+                int a = cboAConversor.SelectedIndex; // A que unidad
 
-            int tipo = cboTipoConversor.SelectedIndex; // Tipo de conversion
-            int de = cboDeConversor.SelectedIndex; // De que unidad
-            int a = cboAConversor.SelectedIndex; // A que unidad
+                // Ejemplo :  cantidad -> 12 dolares ejemplo alor[0][0] -> 18.87 / valor[0][1] -> 1
+                /// 12$ * 18.78 pesos
+                ///        ----------   =   255.36 pesos
+                ///           1$
 
-            // Ejemplo :  cantidad -> 12 dolares ejemplo alor[0][0] -> 18.87 / valor[0][1] -> 1
-            /// 12$ * 18.78 pesos
-            ///        ----------   =   255.36 pesos
-            ///           1$
+                // Funciona esta formula para cualquier conversion
+                double respuesta = cantidad * valores[tipo][a] / valores[tipo][de];
 
-            // Funciona esta formula para cualquier conversion
-            double respuesta = cantidad * valores[tipo][a] / valores[tipo][de];
+                lblRespuestaConversor.Text = "RESPUESTA: " + respuesta;
+            }
+            catch(Exception er)
+            {
+                lblRespuestaConversor.Text = "ERROR"; 
+            }
 
-            lblRespuestaConversor.Text = "RESPUESTA: " + respuesta.ToString("N2");
+        }
+        // Para subirlo 
+        // Se agrego el conversor de area y validaciones
+
+        private double convertir( int tipo, int de, int a, double cantidad)
+        {
+            if (cantidad <= 0)
+            {
+                return 0;
+            }
+            return cantidad * valores[tipo][a] / valores[tipo][de];
 
         }
 
