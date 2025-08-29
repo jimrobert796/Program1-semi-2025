@@ -20,7 +20,7 @@ namespace miPrimerProyectoCsharp
 
 
 
-        double media(string[] serie)
+        double media(int[] serie)
         {
             int n = serie.Length;
             double suma = 0;
@@ -33,14 +33,14 @@ namespace miPrimerProyectoCsharp
 
             for (int i = 0; i < n; i++)
             {
-                suma += double.Parse(serie[i]);
+                suma += (serie[i]);
             }
             return suma / n; // media arimetica 
         }
 
 
 
-        double tipica (string[] serie, double m)
+        double tipica (int[] serie, double m)
         {
 
             //Como se calcula la desviación típica
@@ -53,7 +53,7 @@ namespace miPrimerProyectoCsharp
 
             for (int i = 0; i < serie.Length; i++)
             {
-                int num = int.Parse(serie[i]);
+                int num = serie[i];
                 tipica += Math.Pow(num - m, 2);
             }
 
@@ -62,7 +62,7 @@ namespace miPrimerProyectoCsharp
             return tipica;
         }
 
-        double armonica(string[] serie)
+        double armonica(int[] serie)
         {
 
             // Como se calcula la media armonica
@@ -75,7 +75,7 @@ namespace miPrimerProyectoCsharp
 
             for (int i = 0; i < n; i++)
             {
-                a += 1 / double.Parse(serie[i]);
+                a += 1 / (double)(serie[i]);
             }
 
              armonica = n / a;
@@ -85,9 +85,9 @@ namespace miPrimerProyectoCsharp
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-            //int[] serie = txtxSerie.Text.Split(',').Select(n => int.Parse(n)).ToArray(); // 5, 8, 4, 9 -> [5, 8, 4, 9]
+            int[] serie = txtxSerie.Text.Split(',').Select(n => int.Parse(n)).ToArray(); // 5, 8, 4, 9 -> [5, 8, 4, 9]
 
-            string[] serie = txtxSerie.Text.Split(','); // 5, 8, 4, 9 -> [5, 8, 4, 9]
+           
 
             double mediaAritmetica = media(serie); // llamo a la función media
             double desviacionTipica = tipica(serie, mediaAritmetica); // llamo a la funcion de desviacion tipica

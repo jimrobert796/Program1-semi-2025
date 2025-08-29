@@ -107,7 +107,7 @@
             this.Controls.Add(this.txtxSerie);
             this.Controls.Add(this.lblSerie);
             this.Name = "Form1";
-            this.Text = "Estadistica";
+            this.Text = "ESTADISTICA";
             this.ResumeLayout(false);
             this.PerformLayout();
 
