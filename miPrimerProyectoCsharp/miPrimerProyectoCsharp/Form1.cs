@@ -22,8 +22,6 @@ namespace miPrimerProyectoCsharp
 
         double media(int[] serie)
         {
-            int n = serie.Length;
-            double suma = 0;
 
             // entrar en cada elemento de la matriz e integrarlo en una matriz double 
 
@@ -31,11 +29,8 @@ namespace miPrimerProyectoCsharp
             // la suma de (todos los elementos) / numero de elementos que hay 
             // 5, 8, 4, 9 -> [5, 8, 4, 9] media = (5 + 8 + 4 + 9) / 4 = 6.5
 
-            for (int i = 0; i < n; i++)
-            {
-                suma += (serie[i]);
-            }
-            return suma / n; // media arimetica 
+            
+            return serie.Average(); // función de LINQ quec calcula la media aritmética
         }
 
 
@@ -48,18 +43,9 @@ namespace miPrimerProyectoCsharp
             // LA SUMA DE ((cada elemento - media)^2) / numero de elementos
             // recuerda hay que hacer una suma total de la parte de arriba para proceder a dividir
 
-            double tipica = 0;
-            double n = serie.Length;
-
-            for (int i = 0; i < serie.Length; i++)
-            {
-                int num = serie[i];
-                tipica += Math.Pow(num - m, 2);
-            }
-
-            tipica = Math.Sqrt(tipica / n);
             
-            return tipica;
+            return Math.Sqrt(serie.Average(n=>Math.Pow(n -m, 2))); // función de LINQ que calcula la desviación típica
+            // Voy a ser sincero me cuesta entenderlo es como lamba ... 
         }
 
         double armonica(int[] serie)
@@ -69,18 +55,11 @@ namespace miPrimerProyectoCsharp
             // seria el numero de elementos / la suma de (1 / cada elemento) <-armonica
             // para esta hay que tener la sumatoria de 1/ cada elemento para poder dividir
             // elementos / sumatoria = armonica 
-            double a = 0;
-            double armonica = 0;
+            
             int n = serie.Length;
 
-            for (int i = 0; i < n; i++)
-            {
-                a += 1 / (double)(serie[i]);
-            }
 
-             armonica = n / a;
-
-            return armonica;
+            return n / serie.Sum(num => 1.0/num); // funciona pero es mas legible ya comprendi
         }
 
         private void btnCalcular_Click(object sender, EventArgs e)
