@@ -34,7 +34,7 @@ namespace miPrimerProyectoCsharp
             new string[]{"Galon Us", "Litros", "Pinta Us", "Ml"}, //Volumen
             new string[]{"GB", "Bit", "Byte", "KB", "MG", "TB"}, //Almacenamiento
             new string[]{"Dia", "Segundos", "Minutos", "Horas", "Semana", "Meses", "Año"}, //Tiempo
-            new string[]{"Km^2","Metro", "Milla", "Yarda", "Pie", "Pulgada", "Hectaria"}, //Area 
+            new string[]{"Kilometro caudrado","Metro", "Milla", "Yarda", "Pie", "Pulgada", "Hectaria"}, //Area 
         };
 
         // Matriz con los valores de conversion de uno el inical a los demas
@@ -70,7 +70,7 @@ namespace miPrimerProyectoCsharp
             }
             catch(Exception er)
             {
-                lblRespuestaConversor.Text = "ERROR"; 
+                lblRespuestaConversor.Text = "ERROR: " + er.ToString(); 
             }
 
         }
