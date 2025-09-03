@@ -12,91 +12,77 @@ namespace miPrimerProyectoCsharp
 {
     public partial class Form1 : Form{
         public Form1(){
-            InitializeComponent(); // Este método es esencial para que se cargue el diseño
+            InitializeComponent(); 
         }
         private void Form1_Load(object sender, EventArgs e){
            
         }
-        /*
-            Monedas
-            Longitud
-            Masa
-            Volumen
-            Almacenamiento
-            Tiempo
-            Area
-         */
 
-        String[][] etiquetas = new string[][] {
-            new string[]{"Dolar", "Pesos Mexicanos", "Quetzal", "Lempira", "Colon SV", "Cordobas", "Colon CR"}, //Monedas
-            new string[]{"Metros", "Cm", "Pulgadas","Pie", "Varas", "Yardas", "Km", "Millas"}, //Longitud
-            new string[]{"Libra", "Onza", "Gramo", "Kg", "Quintal", "Tonelada Corta"}, //Masa
-            new string[]{"Galon Us", "Litros", "Pinta Us", "Ml"}, //Volumen
-            new string[]{"GB", "Bit", "Byte", "KB", "MG", "TB"}, //Almacenamiento
-            new string[]{"Dia", "Segundos", "Minutos", "Horas", "Semana", "Meses", "Año"}, //Tiempo
-            new string[]{"Kilometro caudrado","Metro", "Milla", "Yarda", "Pie", "Pulgada", "Hectaria"}, //Area 
-        };
 
         // Matriz con los valores de conversion de uno el inical a los demas
-        // dollar a los demas y asi con los demas 
-        double[][] valores = new double[][]{
-            new double []{1,18.78, 7.66, 26.15, 8.75, 36.78, 504.12}, //Monedas
-            new double []{1, 100, 39.37, 3.28084, 1.193, 1.09361, 0.001, 0.000621371}, //Longitud
-            new double []{1, 16, 453.592, 0.453592, 0.01, 0.001,0.0005}, //Masa
-            new double []{1, 3.78541, 8, 3785.41}, //Volumen
-            new double []{1, 8e+9, 1e+9, 1e+6, 1000, 0.001}, //Almacenamiento
-            new double []{1, 86400, 1440, 24, 0.142857, 0.0328767, 0.00273973}, //Tiempo
-            new double []{1, 1e+6, 0.386102, 1.196e+6, 1.076e+7, 1.55e+9, 100 } //Tiempo
+        double[][] tabla = new double[][]{
+            new double []{0.01 ,500, 1.5,0 }, //1
+            new double []{500.01, 1000, 1.5, 3 }, //2 
+            new double []{1000.01, 2000,3 ,3 }, //3
+            new double []{2000.01, 3000, 6, 3 }, // 4
+            new double []{3000.01, 6000, 9,2 },  //5
+            new double []{8000.01, 18000, 15, 2},  // 6
+            new double []{18000.01, 30000, 39, 2},  // 7
+            new double []{30000.01, 60000, 63, 1},  // 8
+            new double []{60000.01, 100000, 93, 0.8}, // 9
+            new double []{100000.01, 200000, 125, 0.7},  //10
+            new double []{200000.01, 300000, 195, 0.6},  // 11
+            new double []{300000.01, 400000, 255, 0.45},  // 12
+            new double []{400000.01, 500000, 300, 0.4},  //13
+            new double []{500000.01, 1000000, 340, 0.30},  //14
+            new double []{1000000.01, 99999999, 490, 0.18},  // 15
+
         };
 
-        private void btnCalcular_Click(object sender, EventArgs e){
-            try
-            {
-                double cantidad = double.Parse(txtCantidadConversor.Text);
-
-                int tipo = cboTipoConversor.SelectedIndex; // Tipo de conversion
-                int de = cboDeConversor.SelectedIndex; // De que unidad
-                int a = cboAConversor.SelectedIndex; // A que unidad
-
-                // Ejemplo :  cantidad -> 12 dolares ejemplo alor[0][0] -> 18.87 / valor[0][1] -> 1
-                /// 12$ * 18.78 pesos
-                ///        ----------   =   255.36 pesos
-                ///           1$
-
-                // Funciona esta formula para cualquier conversion
-                double respuesta = cantidad * valores[tipo][a] / valores[tipo][de];
-
-                lblRespuestaConversor.Text = "RESPUESTA: " + respuesta;
-            }
-            catch(Exception er)
-            {
-                lblRespuestaConversor.Text = "ERROR: " + er.ToString(); 
-            }
-
-        }
-        // Para subirlo 
-        // Se agrego el conversor de area y validaciones
-
-        private double convertir( int tipo, int de, int a, double cantidad)
+        private double calculo(double monto)
         {
-            if (cantidad <= 0)
-            {
-                return 0;
-            }
-            return cantidad * valores[tipo][a] / valores[tipo][de];
+            double resultado = 0;
 
+
+            for (int i = 0; i < tabla.Length; i++)
+            {
+                if (monto >= tabla[i][0] & monto <= tabla[i][1])
+                {
+                    // 1875.79 – 1000.01 = 875.78 / 1000 * 3 + 3 = $5.63
+                    resultado = monto - tabla[i][0];
+                    resultado = resultado / 1000 * tabla[i][3] + tabla[i][2];
+                }
+            }
+
+
+            return resultado;
         }
 
-        // Cuando cambie el cboTipoConversor
-        private void cboTipoConversor_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            cboAConversor.Items.Clear();
-            cboDeConversor.Items.Clear();
 
-            // Segun la pocicion, llenara segun el indice tomara la matriz
-            // si seleciona longitud, tomaray agregara los contenidos de la matriz de longitud en su pocicion
-            cboAConversor.Items.AddRange(etiquetas[cboTipoConversor.SelectedIndex]);
-            cboDeConversor.Items.AddRange(etiquetas[cboTipoConversor.SelectedIndex]);
+        private void btnCalcular_Click(object sender, EventArgs e)
+        {
+
+
+            double monto = 0;
+            double resultado = 0;
+
+            if (txtMonto.Text == "")
+            {
+                MessageBox.Show("Ingrese un monto valido");
+            }
+            else
+            {
+                monto = double.Parse(txtMonto.Text);
+
+                resultado = calculo(monto);
+                resultado = Math.Round(resultado, 2);
+                
+
+                lblPago.Text = "Su valor a pagar es: $" + resultado;
+            }
+
+                
+
 
         }
     }
