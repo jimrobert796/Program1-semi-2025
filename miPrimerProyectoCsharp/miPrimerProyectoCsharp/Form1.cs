@@ -42,30 +42,28 @@ namespace miPrimerProyectoCsharp
         private double calculo(double monto)
         {
             double resultado = 0;
-
-
+            // recorre la tabla para encontrar el rango en el que se encuentra el monto
             for (int i = 0; i < tabla.Length; i++)
             {
+                // si el monto se encuentra en el rango esta listo para el calculo
                 if (monto >= tabla[i][0] & monto <= tabla[i][1])
                 {
                     // 1875.79 – 1000.01 = 875.78 / 1000 * 3 + 3 = $5.63
+                    // 20000 – 18000.01 = 1999.99 / 1000 * 2 + 39 = 42.9999 = $43
                     resultado = monto - tabla[i][0];
                     resultado = resultado / 1000 * tabla[i][3] + tabla[i][2];
                 }
             }
-
-
             return resultado;
         }
 
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-
-
             double monto = 0;
             double resultado = 0;
 
+            // si no se ingresa un monto valido
             if (txtMonto.Text == "")
             {
                 MessageBox.Show("Ingrese un monto valido");
@@ -80,9 +78,6 @@ namespace miPrimerProyectoCsharp
 
                 lblPago.Text = "Su valor a pagar es: $" + resultado;
             }
-
-                
-
 
         }
     }
