@@ -34,6 +34,8 @@ namespace miPrimerProyectoCsharp
             objDt = objDs.Tables["alumnos"]; // Asignar a la tabla objDt la tabla alumnos del dataset objDs
             objDt.PrimaryKey = new DataColumn[] {objDt.Columns["idAlumno"] }; // Definir la llave primaria de la tabla
 
+            grdAlumnos.DataSource = objDt.DefaultView; // Asignar el origen de datos del datagridview
+
             mostrarDatos();
         }
 
@@ -119,6 +121,7 @@ namespace miPrimerProyectoCsharp
             grbDatosAlumnos.Enabled = estado;
             grbNavegacionAlumnos.Enabled = !estado;
             btnEliminarAlumno.Enabled = !estado;
+            grbBusquedaAlumnos.Enabled = !estado;
 
         }
 
@@ -209,6 +212,36 @@ namespace miPrimerProyectoCsharp
 
         }
 
-        
+        private void txtBusquedaAlumnos_KeyDown(object sender, KeyEventArgs e)
+        {
+            filtrarDatos(txtBusquedaAlumnos.Text);
+
+        }
+        private void filtrarDatos(string valor)
+        {
+
+            DataView obDv = objDt.DefaultView;
+            obDv.RowFilter = "codigo like '%" + valor + "%' OR nombre like '%" + valor + "%'";
+            grdAlumnos.DataSource = obDv;
+
+            selecionarAlumno();
+        }
+            
+        private void selecionarAlumno()
+        {
+            // SOLUCION EN CASO NO SE ENCUENTRE NADA
+            // si el conteo de filas es ninguna por algun error no entrara a mostrar los datos
+            if (grdAlumnos.Rows.Count > 0)
+            {
+                posicion = objDt.Rows.IndexOf(objDt.Rows.Find(grdAlumnos.CurrentRow.Cells["id"].Value));
+                mostrarDatos();
+            }
+            
+            
+        }
+        private void grdAlumnos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            selecionarAlumno();
+        }
     }
 }
