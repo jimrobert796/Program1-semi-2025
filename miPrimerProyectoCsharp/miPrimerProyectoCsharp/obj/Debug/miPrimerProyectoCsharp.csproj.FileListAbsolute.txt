@@ -20,3 +20,7 @@ C:\Users\jimmy\Desktop\Repo_clase\miPrimerProyectoCsharp\miPrimerProyectoCsharp\
 C:\Users\jimmy\Desktop\Repo_clase\miPrimerProyectoCsharp\miPrimerProyectoCsharp\obj\Debug\miPrimerProyectoCsharp.exe
 C:\Users\jimmy\Desktop\Repo_clase\miPrimerProyectoCsharp\miPrimerProyectoCsharp\obj\Debug\miPrimerProyectoCsharp.pdb
 C:\Users\jimmy\Desktop\Repo_clase\miPrimerProyectoCsharp\miPrimerProyectoCsharp\obj\Debug\miPrimerProyectoCsharp.exe.config
+C:\Users\jimmy\Desktop\Program1-semi-2025\miPrimerProyectoCsharp\miPrimerProyectoCsharp\bin\Debug\academicaDocentes.mdf
+C:\Users\jimmy\Desktop\Program1-semi-2025\miPrimerProyectoCsharp\miPrimerProyectoCsharp\bin\Debug\academicaDocentes_log.ldf
+C:\Users\jimmy\Desktop\Program1-semi-2025\miPrimerProyectoCsharp\miPrimerProyectoCsharp\bin\Debug\db_academicaDocentes.mdf
+C:\Users\jimmy\Desktop\Program1-semi-2025\miPrimerProyectoCsharp\miPrimerProyectoCsharp\bin\Debug\db_academicaDocentes_log.ldf
