@@ -49,6 +49,10 @@ namespace miPrimerProyectoCsharp
             objComando.CommandText = "SELECT * FROM materias";
             objAdaptadir.Fill(objDs, "materias"); // Tomando los datos de la BD y llenando el Dataset
 
+            //Para la tabla materias
+            objComando.CommandText = "SELECT * FROM docentes";
+            objAdaptadir.Fill(objDs, "docentes"); // Tomando los datos de la BD y llenando el Dataset
+
             return objDs;
 
         } 
@@ -93,6 +97,28 @@ namespace miPrimerProyectoCsharp
             else if (accion == "Eliminar")
             {
                 sql = "DELETE FROM materias WHERE idMateria='" + datos[0] + "'";
+            }
+            return ejecturaSql(sql, datos);
+        }
+
+        // Guardado de datos para docentes
+        public string administrarDatosDocentes(string[] datos, string accion)
+        {
+
+            // string[] datos = { idAlumno, codigo, nombre, direccion, telefono };
+
+            string sql = "";
+            if (accion == "Nuevo")
+            {
+                sql = "INSERT INTO docentes (codigo, nombre, materia, dui, direccion, telefono) VALUES ('" + datos[1] + "', '" + datos[2] + "', '" + datos[3] + "','" + datos[4] + "','" + datos[5] + "','" + datos[6] + "')";
+            }
+            else if (accion == "Modificar")
+            {
+                sql = "UPDATE docentes SET codigo='" + datos[1] + "', nombre='" + datos[2] + "', materia='" + datos[3] + "', dui='" + datos[4] + "', direccion= '" + datos[5] +"', telefono= '" + datos[6] +"' WHERE idDocente='" + datos[0] + "'";
+            }
+            else if (accion == "Eliminar")
+            {
+                sql = "DELETE FROM docentes WHERE idDocente='" + datos[0] + "'";
             }
             return ejecturaSql(sql, datos);
         }

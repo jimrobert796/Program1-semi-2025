@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace miPrimerProyectoCsharp
 {
-    public partial class Form1 : Form
+    public partial class FrmAlumnos : Form
     {
-        public Form1()
+        public FrmAlumnos()
         {
             InitializeComponent(); // Este método es esencial para que se cargue el diseño
         }

@@ -1,6 +1,6 @@
 ﻿namespace miPrimerProyectoCsharp
 {
-    partial class Form1
+    partial class FrmAlumnos
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.grbDatosAlumnos = new System.Windows.Forms.GroupBox();
             this.txtTelefonoAlumno = new System.Windows.Forms.TextBox();
             this.lblTelefono = new System.Windows.Forms.Label();
@@ -84,7 +83,6 @@
             this.grbDatosAlumnos.TabIndex = 0;
             this.grbDatosAlumnos.TabStop = false;
             this.grbDatosAlumnos.Text = "DATOS";
-            
             // 
             // txtTelefonoAlumno
             // 
@@ -355,16 +353,16 @@
             this.txtBusquedaAlumnos.TabIndex = 0;
             this.txtBusquedaAlumnos.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtBusquedaAlumnos_KeyUp);
             // 
-            // Form1
+            // FrmAlumnos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(779, 411);
+            this.ClientSize = new System.Drawing.Size(779, 383);
             this.Controls.Add(this.grbBusquedaAlumnos);
             this.Controls.Add(this.grbEdicionAlumnos);
             this.Controls.Add(this.grbNavegacionAlumnos);
             this.Controls.Add(this.grbDatosAlumnos);
-            this.Name = "Form1";
+            this.Name = "FrmAlumnos";
             this.Text = "ADMINISTRACION DE ALUMNOS";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.grbDatosAlumnos.ResumeLayout(false);
@@ -380,7 +378,6 @@
         }
 
         #endregion
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.GroupBox grbDatosAlumnos;
         private System.Windows.Forms.TextBox txtTelefonoAlumno;
         private System.Windows.Forms.Label lblRegistroAlumno;

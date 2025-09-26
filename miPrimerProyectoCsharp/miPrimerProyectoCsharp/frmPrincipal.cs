@@ -20,14 +20,14 @@ namespace miPrimerProyectoCsharp
         private void alumnosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //Inicar el formulario de alumnos
-            Form1 objAlumnos = new Form1();
+            FrmAlumnos objAlumnos = new FrmAlumnos();
             objAlumnos.MdiParent = this; // Establecer el formulario principal como padre
             objAlumnos.Show();
         }
 
         private void materiasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form3 objMaterias = new Form3();
+            FrmMaterias objMaterias = new FrmMaterias();
             objMaterias.MdiParent = this; // Establecer el formulario principal como padre
             objMaterias.Show();
         }
@@ -42,6 +42,14 @@ namespace miPrimerProyectoCsharp
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void docentesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmDocentes objDocente = new FrmDocentes();
+            objDocente.MdiParent = this; // Establecer el formulario principal como padre
+            objDocente.Show();
+
         }
     }
 }

@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace miPrimerProyectoCsharp
 {
-    public partial class Form3 : Form
+    public partial class FrmMaterias : Form
     {
-        public Form3()
+        public FrmMaterias()
         {
             InitializeComponent();
         }
