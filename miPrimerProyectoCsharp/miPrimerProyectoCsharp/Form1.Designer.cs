@@ -84,7 +84,7 @@
             this.grbDatosAlumnos.TabIndex = 0;
             this.grbDatosAlumnos.TabStop = false;
             this.grbDatosAlumnos.Text = "DATOS";
-            this.grbDatosAlumnos.Enter += new System.EventHandler(this.grbDatosAlumnos_Enter);
+            
             // 
             // txtTelefonoAlumno
             // 
@@ -190,7 +190,6 @@
             this.grbNavegacionAlumnos.TabIndex = 1;
             this.grbNavegacionAlumnos.TabStop = false;
             this.grbNavegacionAlumnos.Text = "Navegacion";
-            this.grbNavegacionAlumnos.Enter += new System.EventHandler(this.grbNavegacionAlumnos_Enter);
             // 
             // btnUltimoAlumno
             // 
@@ -247,7 +246,6 @@
             this.grbEdicionAlumnos.TabIndex = 2;
             this.grbEdicionAlumnos.TabStop = false;
             this.grbEdicionAlumnos.Text = "Edicion";
-            this.grbEdicionAlumnos.Enter += new System.EventHandler(this.grbEdicionAlumnos_Enter);
             // 
             // btnEliminarAlumno
             // 
@@ -355,7 +353,7 @@
             this.txtBusquedaAlumnos.Name = "txtBusquedaAlumnos";
             this.txtBusquedaAlumnos.Size = new System.Drawing.Size(383, 20);
             this.txtBusquedaAlumnos.TabIndex = 0;
-            this.txtBusquedaAlumnos.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBusquedaAlumnos_KeyDown);
+            this.txtBusquedaAlumnos.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtBusquedaAlumnos_KeyUp);
             // 
             // Form1
             // 
