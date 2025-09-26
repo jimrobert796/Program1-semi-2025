@@ -24,3 +24,4 @@ C:\Users\jimmy\Desktop\Program1-semi-2025\miPrimerProyectoCsharp\miPrimerProyect
 C:\Users\jimmy\Desktop\Program1-semi-2025\miPrimerProyectoCsharp\miPrimerProyectoCsharp\bin\Debug\db_academica_log.ldf
 C:\Users\jimmy\Desktop\Program1-semi-2025\miPrimerProyectoCsharp\miPrimerProyectoCsharp\obj\Debug\miPrimerProyectoCsharp.frmPrincipal.resources
 C:\Users\jimmy\Desktop\Program1-semi-2025\miPrimerProyectoCsharp\miPrimerProyectoCsharp\obj\Debug\miPrimerProyectoCsharp.Form3.resources
+C:\Users\jimmy\Desktop\Program1-semi-2025\miPrimerProyectoCsharp\miPrimerProyectoCsharp\obj\Debug\miPrimerProyectoCsharp.FrmPeriodos.resources

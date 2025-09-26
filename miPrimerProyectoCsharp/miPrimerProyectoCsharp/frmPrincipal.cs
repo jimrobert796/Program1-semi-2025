@@ -31,5 +31,12 @@ namespace miPrimerProyectoCsharp
             objMaterias.MdiParent = this; // Establecer el formulario principal como padre
             objMaterias.Show();
         }
+
+        private void periodosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmPeriodos objPeriodos = new FrmPeriodos();
+            objPeriodos.MdiParent = this; // Establecer el formulario principal como padre
+            objPeriodos.Show();
+        }
     }
 }
