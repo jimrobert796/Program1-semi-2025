@@ -26,3 +26,4 @@ C:\Users\jimmy\Desktop\Program1-semi-2025\miPrimerProyectoCsharp\miPrimerProyect
 C:\Users\jimmy\Desktop\Program1-semi-2025\miPrimerProyectoCsharp\miPrimerProyectoCsharp\obj\Debug\miPrimerProyectoCsharp.FrmAlumnos.resources
 C:\Users\jimmy\Desktop\Program1-semi-2025\miPrimerProyectoCsharp\miPrimerProyectoCsharp\obj\Debug\miPrimerProyectoCsharp.FrmMaterias.resources
 C:\Users\jimmy\Desktop\Program1-semi-2025\miPrimerProyectoCsharp\miPrimerProyectoCsharp\obj\Debug\miPrimerProyectoCsharp.FrmDocentes.resources
+C:\Users\jimmy\Desktop\Program1-semi-2025\miPrimerProyectoCsharp\miPrimerProyectoCsharp\obj\Debug\miPrimerProyectoCsharp.FrmNotas.resources

@@ -3,27 +3,31 @@
   "WorkspaceRootPath": "C:\\Users\\jimmy\\Desktop\\Program1-semi-2025\\miPrimerProyectoCsharp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_JIMMY_DESKTOP_PROGRAM1_SEMI_2025_MIPRIMERPROYECTOCSHARP_MIPRIMERPROYECTOCSHARP_DB_ACADEMICA.MDF/True/SqlTable/dbo.docentes.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{4DD41BA3-A9C3-449C-9DAB-AF93F140651F}|miPrimerProyectoCsharp\\miPrimerProyectoCsharp.csproj|c:\\users\\jimmy\\desktop\\program1-semi-2025\\miprimerproyectocsharp\\miprimerproyectocsharp\\frmnotas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4DD41BA3-A9C3-449C-9DAB-AF93F140651F}|miPrimerProyectoCsharp\\miPrimerProyectoCsharp.csproj|solutionrelative:miprimerproyectocsharp\\frmnotas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DD41BA3-A9C3-449C-9DAB-AF93F140651F}|miPrimerProyectoCsharp\\miPrimerProyectoCsharp.csproj|c:\\users\\jimmy\\desktop\\program1-semi-2025\\miprimerproyectocsharp\\miprimerproyectocsharp\\frmdocentes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4DD41BA3-A9C3-449C-9DAB-AF93F140651F}|miPrimerProyectoCsharp\\miPrimerProyectoCsharp.csproj|solutionrelative:miprimerproyectocsharp\\frmdocentes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DD41BA3-A9C3-449C-9DAB-AF93F140651F}|miPrimerProyectoCsharp\\miPrimerProyectoCsharp.csproj|c:\\users\\jimmy\\desktop\\program1-semi-2025\\miprimerproyectocsharp\\miprimerproyectocsharp\\frmdocentes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DD41BA3-A9C3-449C-9DAB-AF93F140651F}|miPrimerProyectoCsharp\\miPrimerProyectoCsharp.csproj|solutionrelative:miprimerproyectocsharp\\frmdocentes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DD41BA3-A9C3-449C-9DAB-AF93F140651F}|miPrimerProyectoCsharp\\miPrimerProyectoCsharp.csproj|c:\\users\\jimmy\\desktop\\program1-semi-2025\\miprimerproyectocsharp\\miprimerproyectocsharp\\frmalumnos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DD41BA3-A9C3-449C-9DAB-AF93F140651F}|miPrimerProyectoCsharp\\miPrimerProyectoCsharp.csproj|solutionrelative:miprimerproyectocsharp\\frmalumnos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DD41BA3-A9C3-449C-9DAB-AF93F140651F}|miPrimerProyectoCsharp\\miPrimerProyectoCsharp.csproj|c:\\users\\jimmy\\desktop\\program1-semi-2025\\miprimerproyectocsharp\\miprimerproyectocsharp\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DD41BA3-A9C3-449C-9DAB-AF93F140651F}|miPrimerProyectoCsharp\\miPrimerProyectoCsharp.csproj|solutionrelative:miprimerproyectocsharp\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_JIMMY_DESKTOP_PROGRAM1_SEMI_2025_MIPRIMERPROYECTOCSHARP_MIPRIMERPROYECTOCSHARP_DB_ACADEMICA.MDF/True/SqlTable/dbo.periodos.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4DD41BA3-A9C3-449C-9DAB-AF93F140651F}|miPrimerProyectoCsharp\\miPrimerProyectoCsharp.csproj|c:\\users\\jimmy\\desktop\\program1-semi-2025\\miprimerproyectocsharp\\miprimerproyectocsharp\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DD41BA3-A9C3-449C-9DAB-AF93F140651F}|miPrimerProyectoCsharp\\miPrimerProyectoCsharp.csproj|solutionrelative:miprimerproyectocsharp\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DD41BA3-A9C3-449C-9DAB-AF93F140651F}|miPrimerProyectoCsharp\\miPrimerProyectoCsharp.csproj|c:\\users\\jimmy\\desktop\\program1-semi-2025\\miprimerproyectocsharp\\miprimerproyectocsharp\\frmnotas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DD41BA3-A9C3-449C-9DAB-AF93F140651F}|miPrimerProyectoCsharp\\miPrimerProyectoCsharp.csproj|solutionrelative:miprimerproyectocsharp\\frmnotas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DD41BA3-A9C3-449C-9DAB-AF93F140651F}|miPrimerProyectoCsharp\\miPrimerProyectoCsharp.csproj|c:\\users\\jimmy\\desktop\\program1-semi-2025\\miprimerproyectocsharp\\miprimerproyectocsharp\\frmnotas.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DD41BA3-A9C3-449C-9DAB-AF93F140651F}|miPrimerProyectoCsharp\\miPrimerProyectoCsharp.csproj|solutionrelative:miprimerproyectocsharp\\frmnotas.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DD41BA3-A9C3-449C-9DAB-AF93F140651F}|miPrimerProyectoCsharp\\miPrimerProyectoCsharp.csproj|c:\\users\\jimmy\\desktop\\program1-semi-2025\\miprimerproyectocsharp\\miprimerproyectocsharp\\frmmaterias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DD41BA3-A9C3-449C-9DAB-AF93F140651F}|miPrimerProyectoCsharp\\miPrimerProyectoCsharp.csproj|solutionrelative:miprimerproyectocsharp\\frmmaterias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DD41BA3-A9C3-449C-9DAB-AF93F140651F}|miPrimerProyectoCsharp\\miPrimerProyectoCsharp.csproj|c:\\users\\jimmy\\desktop\\program1-semi-2025\\miprimerproyectocsharp\\miprimerproyectocsharp\\db_academicadataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
+      "RelativeMoniker": "D:0:0:{4DD41BA3-A9C3-449C-9DAB-AF93F140651F}|miPrimerProyectoCsharp\\miPrimerProyectoCsharp.csproj|solutionrelative:miprimerproyectocsharp\\db_academicadataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,7 +37,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 258,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -41,82 +45,88 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "dbo.docentes [Datos]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_JIMMY_DESKTOP_PROGRAM1_SEMI_2025_MIPRIMERPROYECTOCSHARP_MIPRIMERPROYECTOCSHARP_DB_ACADEMICA.MDF/True/SqlTable/dbo.docentes.sql",
-              "ToolTip": "dbo.docentes [Datos]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-09-26T17:53:36.48Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FrmDocentes.cs",
-              "DocumentMoniker": "C:\\Users\\jimmy\\Desktop\\Program1-semi-2025\\miPrimerProyectoCsharp\\miPrimerProyectoCsharp\\FrmDocentes.cs",
-              "RelativeDocumentMoniker": "miPrimerProyectoCsharp\\FrmDocentes.cs",
-              "ToolTip": "C:\\Users\\jimmy\\Desktop\\Program1-semi-2025\\miPrimerProyectoCsharp\\miPrimerProyectoCsharp\\FrmDocentes.cs",
-              "RelativeToolTip": "miPrimerProyectoCsharp\\FrmDocentes.cs",
-              "ViewState": "AgIAAO0AAAAAAAAAAAAtwPEAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T16:48:55.895Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FrmDocentes.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\jimmy\\Desktop\\Program1-semi-2025\\miPrimerProyectoCsharp\\miPrimerProyectoCsharp\\FrmDocentes.cs",
-              "RelativeDocumentMoniker": "miPrimerProyectoCsharp\\FrmDocentes.cs",
-              "ToolTip": "C:\\Users\\jimmy\\Desktop\\Program1-semi-2025\\miPrimerProyectoCsharp\\miPrimerProyectoCsharp\\FrmDocentes.cs [Dise\u00F1o]",
-              "RelativeToolTip": "miPrimerProyectoCsharp\\FrmDocentes.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T16:35:52.302Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "frmPrincipal.cs",
-              "DocumentMoniker": "C:\\Users\\jimmy\\Desktop\\Program1-semi-2025\\miPrimerProyectoCsharp\\miPrimerProyectoCsharp\\frmPrincipal.cs",
-              "RelativeDocumentMoniker": "miPrimerProyectoCsharp\\frmPrincipal.cs",
-              "ToolTip": "C:\\Users\\jimmy\\Desktop\\Program1-semi-2025\\miPrimerProyectoCsharp\\miPrimerProyectoCsharp\\frmPrincipal.cs",
-              "RelativeToolTip": "miPrimerProyectoCsharp\\frmPrincipal.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAtwDIAAAAeAAAAAAAAAA==",
+              "Title": "FrmNotas.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\jimmy\\Desktop\\Program1-semi-2025\\miPrimerProyectoCsharp\\miPrimerProyectoCsharp\\FrmNotas.Designer.cs",
+              "RelativeDocumentMoniker": "miPrimerProyectoCsharp\\FrmNotas.Designer.cs",
+              "ToolTip": "C:\\Users\\jimmy\\Desktop\\Program1-semi-2025\\miPrimerProyectoCsharp\\miPrimerProyectoCsharp\\FrmNotas.Designer.cs",
+              "RelativeToolTip": "miPrimerProyectoCsharp\\FrmNotas.Designer.cs",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAtwKIAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T16:42:09.87Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Conexion.cs",
-              "DocumentMoniker": "C:\\Users\\jimmy\\Desktop\\Program1-semi-2025\\miPrimerProyectoCsharp\\miPrimerProyectoCsharp\\Conexion.cs",
-              "RelativeDocumentMoniker": "miPrimerProyectoCsharp\\Conexion.cs",
-              "ToolTip": "C:\\Users\\jimmy\\Desktop\\Program1-semi-2025\\miPrimerProyectoCsharp\\miPrimerProyectoCsharp\\Conexion.cs",
-              "RelativeToolTip": "miPrimerProyectoCsharp\\Conexion.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAqwDgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T16:24:21.867Z",
+              "WhenOpened": "2025-10-03T06:13:37.464Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "FrmAlumnos.cs",
-              "DocumentMoniker": "C:\\Users\\jimmy\\Desktop\\Program1-semi-2025\\miPrimerProyectoCsharp\\miPrimerProyectoCsharp\\FrmAlumnos.cs",
-              "RelativeDocumentMoniker": "miPrimerProyectoCsharp\\FrmAlumnos.cs",
-              "ToolTip": "C:\\Users\\jimmy\\Desktop\\Program1-semi-2025\\miPrimerProyectoCsharp\\miPrimerProyectoCsharp\\FrmAlumnos.cs",
-              "RelativeToolTip": "miPrimerProyectoCsharp\\FrmAlumnos.cs",
-              "ViewState": "AgIAAOcAAAAAAAAAAAAQwPkAAAAfAAAAAAAAAA==",
+              "Title": "FrmNotas.cs",
+              "DocumentMoniker": "C:\\Users\\jimmy\\Desktop\\Program1-semi-2025\\miPrimerProyectoCsharp\\miPrimerProyectoCsharp\\FrmNotas.cs",
+              "RelativeDocumentMoniker": "miPrimerProyectoCsharp\\FrmNotas.cs",
+              "ToolTip": "C:\\Users\\jimmy\\Desktop\\Program1-semi-2025\\miPrimerProyectoCsharp\\miPrimerProyectoCsharp\\FrmNotas.cs",
+              "RelativeToolTip": "miPrimerProyectoCsharp\\FrmNotas.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAowGQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T16:49:18.696Z",
+              "WhenOpened": "2025-10-03T05:24:31.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Conexion.cs",
+              "DocumentMoniker": "C:\\Users\\jimmy\\Desktop\\Program1-semi-2025\\miPrimerProyectoCsharp\\miPrimerProyectoCsharp\\Conexion.cs",
+              "RelativeDocumentMoniker": "miPrimerProyectoCsharp\\Conexion.cs",
+              "ToolTip": "C:\\Users\\jimmy\\Desktop\\Program1-semi-2025\\miPrimerProyectoCsharp\\miPrimerProyectoCsharp\\Conexion.cs",
+              "RelativeToolTip": "miPrimerProyectoCsharp\\Conexion.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAkwFMAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T05:08:26.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "dbo.periodos [Datos]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_JIMMY_DESKTOP_PROGRAM1_SEMI_2025_MIPRIMERPROYECTOCSHARP_MIPRIMERPROYECTOCSHARP_DB_ACADEMICA.MDF/True/SqlTable/dbo.periodos.sql",
+              "ToolTip": "dbo.periodos [Datos]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-10-03T05:22:03.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmNotas.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\jimmy\\Desktop\\Program1-semi-2025\\miPrimerProyectoCsharp\\miPrimerProyectoCsharp\\FrmNotas.cs",
+              "RelativeDocumentMoniker": "miPrimerProyectoCsharp\\FrmNotas.cs",
+              "ToolTip": "C:\\Users\\jimmy\\Desktop\\Program1-semi-2025\\miPrimerProyectoCsharp\\miPrimerProyectoCsharp\\FrmNotas.cs [Dise\u00F1o]",
+              "RelativeToolTip": "miPrimerProyectoCsharp\\FrmNotas.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T14:57:27.519Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FrmMaterias.cs",
+              "DocumentMoniker": "C:\\Users\\jimmy\\Desktop\\Program1-semi-2025\\miPrimerProyectoCsharp\\miPrimerProyectoCsharp\\FrmMaterias.cs",
+              "RelativeDocumentMoniker": "miPrimerProyectoCsharp\\FrmMaterias.cs",
+              "ToolTip": "C:\\Users\\jimmy\\Desktop\\Program1-semi-2025\\miPrimerProyectoCsharp\\miPrimerProyectoCsharp\\FrmMaterias.cs",
+              "RelativeToolTip": "miPrimerProyectoCsharp\\FrmMaterias.cs",
+              "ViewState": "AgIAANkAAAAAAAAAAAAYwOYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T04:59:05.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "db_academicaDataSet.xsd",
+              "DocumentMoniker": "C:\\Users\\jimmy\\Desktop\\Program1-semi-2025\\miPrimerProyectoCsharp\\miPrimerProyectoCsharp\\db_academicaDataSet.xsd",
+              "RelativeDocumentMoniker": "miPrimerProyectoCsharp\\db_academicaDataSet.xsd",
+              "ToolTip": "C:\\Users\\jimmy\\Desktop\\Program1-semi-2025\\miPrimerProyectoCsharp\\miPrimerProyectoCsharp\\db_academicaDataSet.xsd",
+              "RelativeToolTip": "miPrimerProyectoCsharp\\db_academicaDataSet.xsd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
+              "WhenOpened": "2025-10-02T14:59:17.865Z",
               "EditorCaption": ""
             }
           ]

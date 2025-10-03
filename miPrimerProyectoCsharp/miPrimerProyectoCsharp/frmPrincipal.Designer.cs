@@ -137,6 +137,7 @@
             this.notasToolStripMenuItem.Name = "notasToolStripMenuItem";
             this.notasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.notasToolStripMenuItem.Text = "Notas";
+            this.notasToolStripMenuItem.Click += new System.EventHandler(this.notasToolStripMenuItem_Click);
             // 
             // frmPrincipal
             // 

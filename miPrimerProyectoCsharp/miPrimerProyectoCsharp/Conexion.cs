@@ -16,9 +16,9 @@ namespace miPrimerProyectoCsharp
     {
         // definir atributos metodos de la clase.
 
-        SqlConnection objConexion = new SqlConnection(); // Conectarme a la base de datos o BD
+        public SqlConnection objConexion = new SqlConnection(); // Conectarme a la base de datos o BD
         SqlCommand objComando = new SqlCommand(); // ejecutar SQL en base de datos. Lectura , escritura, actualizacion, eliminacion, intercecion etc
-        SqlDataAdapter objAdaptadir = new SqlDataAdapter(); // un puente entre la BD y la aplicacion. Imagina por donde pasan los datos a la aplicacion
+        public SqlDataAdapter objAdaptadir = new SqlDataAdapter(); // un puente entre la BD y la aplicacion. Imagina por donde pasan los datos a la aplicacion
         DataSet objDs = new DataSet(); // Es una representacion de arquitectura de la BD en memoria
 
 
@@ -53,6 +53,11 @@ namespace miPrimerProyectoCsharp
             objComando.CommandText = "SELECT * FROM docentes";
             objAdaptadir.Fill(objDs, "docentes"); // Tomando los datos de la BD y llenando el Dataset
 
+     
+
+
+            objAdaptadir.Fill(objDs, "docentes"); // Tomando los datos de la BD y llenando el Dataset
+
             return objDs;
 
         } 
@@ -76,7 +81,7 @@ namespace miPrimerProyectoCsharp
             {
                 sql = "DELETE FROM alumnos WHERE idAlumno='" + datos[0] + "'";
             }
-            return ejecturaSql(sql, datos);
+            return ejecturaSql(sql);
         }
 
         // Guardado de datos para materias 
@@ -98,7 +103,7 @@ namespace miPrimerProyectoCsharp
             {
                 sql = "DELETE FROM materias WHERE idMateria='" + datos[0] + "'";
             }
-            return ejecturaSql(sql, datos);
+            return ejecturaSql(sql);
         }
 
         // Guardado de datos para docentes
@@ -120,11 +125,11 @@ namespace miPrimerProyectoCsharp
             {
                 sql = "DELETE FROM docentes WHERE idDocente='" + datos[0] + "'";
             }
-            return ejecturaSql(sql, datos);
+            return ejecturaSql(sql);
         }
 
 
-        public string ejecturaSql(string sql, string[] datos)
+        public string ejecturaSql(string sql)
         {
             try
             {

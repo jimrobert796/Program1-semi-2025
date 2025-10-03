@@ -51,5 +51,12 @@ namespace miPrimerProyectoCsharp
             objDocente.Show();
 
         }
+
+        private void notasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmNotas objNotas = new FrmNotas();
+            objNotas.MdiParent = this; // Establecer el formulario principal como padre
+            objNotas.Show();
+        }
     }
 }
