@@ -1,14 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\jimmy\\Desktop\\Program1-semi-2025\\miPrimerProyectoCsharp\\",
+  "WorkspaceRootPath": "C:\\Users\\jimmy\\Desktop\\Repo para el parcial\\miPrimerProyectoCsharp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4DD41BA3-A9C3-449C-9DAB-AF93F140651F}|miPrimerProyectoCsharp\\miPrimerProyectoCsharp.csproj|c:\\users\\jimmy\\desktop\\program1-semi-2025\\miprimerproyectocsharp\\miprimerproyectocsharp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DD41BA3-A9C3-449C-9DAB-AF93F140651F}|miPrimerProyectoCsharp\\miPrimerProyectoCsharp.csproj|solutionrelative:miprimerproyectocsharp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4DD41BA3-A9C3-449C-9DAB-AF93F140651F}|miPrimerProyectoCsharp\\miPrimerProyectoCsharp.csproj|c:\\users\\jimmy\\desktop\\repo para el parcial\\miprimerproyectocsharp\\miprimerproyectocsharp\\conexion_base_datos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DD41BA3-A9C3-449C-9DAB-AF93F140651F}|miPrimerProyectoCsharp\\miPrimerProyectoCsharp.csproj|solutionrelative:miprimerproyectocsharp\\conexion_base_datos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DD41BA3-A9C3-449C-9DAB-AF93F140651F}|miPrimerProyectoCsharp\\miPrimerProyectoCsharp.csproj|C:\\Users\\jimmy\\Desktop\\Program1-semi-2025\\miPrimerProyectoCsharp\\miprimerproyectocsharp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4DD41BA3-A9C3-449C-9DAB-AF93F140651F}|miPrimerProyectoCsharp\\miPrimerProyectoCsharp.csproj|solutionrelative:miprimerproyectocsharp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{4DD41BA3-A9C3-449C-9DAB-AF93F140651F}|miPrimerProyectoCsharp\\miPrimerProyectoCsharp.csproj|c:\\users\\jimmy\\desktop\\repo para el parcial\\miprimerproyectocsharp\\miprimerproyectocsharp\\frm_usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DD41BA3-A9C3-449C-9DAB-AF93F140651F}|miPrimerProyectoCsharp\\miPrimerProyectoCsharp.csproj|solutionrelative:miprimerproyectocsharp\\frm_usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DD41BA3-A9C3-449C-9DAB-AF93F140651F}|miPrimerProyectoCsharp\\miPrimerProyectoCsharp.csproj|c:\\users\\jimmy\\desktop\\repo para el parcial\\miprimerproyectocsharp\\miprimerproyectocsharp\\frm_usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4DD41BA3-A9C3-449C-9DAB-AF93F140651F}|miPrimerProyectoCsharp\\miPrimerProyectoCsharp.csproj|solutionrelative:miprimerproyectocsharp\\frm_usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_JIMMY_DESKTOP_REPO_PARA_EL_PARCIAL_MIPRIMERPROYECTOCSHARP_MIPRIMERPROYECTOCSHARP_USUARIOS.MDF/True/SqlTable/dbo.usuarios.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +25,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,25 +33,48 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "dbo.usuarios [Datos]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_JIMMY_DESKTOP_REPO_PARA_EL_PARCIAL_MIPRIMERPROYECTOCSHARP_MIPRIMERPROYECTOCSHARP_USUARIOS.MDF/True/SqlTable/dbo.usuarios.sql",
+              "ToolTip": "dbo.usuarios [Datos]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-10-22T15:22:42.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\jimmy\\Desktop\\Program1-semi-2025\\miPrimerProyectoCsharp\\miPrimerProyectoCsharp\\Form1.cs",
-              "RelativeDocumentMoniker": "miPrimerProyectoCsharp\\Form1.cs",
-              "ToolTip": "C:\\Users\\jimmy\\Desktop\\Program1-semi-2025\\miPrimerProyectoCsharp\\miPrimerProyectoCsharp\\Form1.cs",
-              "RelativeToolTip": "miPrimerProyectoCsharp\\Form1.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAIwF4AAAAAAAAAAAAAAA==",
+              "Title": "Conexion_base_datos.cs",
+              "DocumentMoniker": "C:\\Users\\jimmy\\Desktop\\Repo para el parcial\\miPrimerProyectoCsharp\\miPrimerProyectoCsharp\\Conexion_base_datos.cs",
+              "RelativeDocumentMoniker": "miPrimerProyectoCsharp\\Conexion_base_datos.cs",
+              "ToolTip": "C:\\Users\\jimmy\\Desktop\\Repo para el parcial\\miPrimerProyectoCsharp\\miPrimerProyectoCsharp\\Conexion_base_datos.cs*",
+              "RelativeToolTip": "miPrimerProyectoCsharp\\Conexion_base_datos.cs*",
+              "ViewState": "AgIAACwAAAAAAAAAAADwvz8AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T15:10:36.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frm_usuarios.cs",
+              "DocumentMoniker": "C:\\Users\\jimmy\\Desktop\\Repo para el parcial\\miPrimerProyectoCsharp\\miPrimerProyectoCsharp\\frm_usuarios.cs",
+              "RelativeDocumentMoniker": "miPrimerProyectoCsharp\\frm_usuarios.cs",
+              "ToolTip": "C:\\Users\\jimmy\\Desktop\\Repo para el parcial\\miPrimerProyectoCsharp\\miPrimerProyectoCsharp\\frm_usuarios.cs",
+              "RelativeToolTip": "miPrimerProyectoCsharp\\frm_usuarios.cs",
+              "ViewState": "AgIAAKEAAAAAAAAAAAAwwLsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-30T23:45:19.551Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\jimmy\\Desktop\\Program1-semi-2025\\miPrimerProyectoCsharp\\miPrimerProyectoCsharp\\Form1.cs",
-              "RelativeDocumentMoniker": "miPrimerProyectoCsharp\\Form1.cs",
-              "ToolTip": "C:\\Users\\jimmy\\Desktop\\Program1-semi-2025\\miPrimerProyectoCsharp\\miPrimerProyectoCsharp\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "miPrimerProyectoCsharp\\Form1.cs [Dise\u00F1o]",
+              "DocumentIndex": 2,
+              "Title": "frm_usuarios.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\jimmy\\Desktop\\Repo para el parcial\\miPrimerProyectoCsharp\\miPrimerProyectoCsharp\\frm_usuarios.cs",
+              "RelativeDocumentMoniker": "miPrimerProyectoCsharp\\frm_usuarios.cs",
+              "ToolTip": "C:\\Users\\jimmy\\Desktop\\Repo para el parcial\\miPrimerProyectoCsharp\\miPrimerProyectoCsharp\\frm_usuarios.cs [Dise\u00F1o]",
+              "RelativeToolTip": "miPrimerProyectoCsharp\\frm_usuarios.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-30T23:45:16.307Z",
               "EditorCaption": " [Dise\u00F1o]"

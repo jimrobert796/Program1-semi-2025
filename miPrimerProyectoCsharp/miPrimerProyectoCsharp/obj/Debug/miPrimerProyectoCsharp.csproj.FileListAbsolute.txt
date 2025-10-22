@@ -20,3 +20,17 @@ C:\Users\jimmy\Desktop\Repo_clase\miPrimerProyectoCsharp\miPrimerProyectoCsharp\
 C:\Users\jimmy\Desktop\Repo_clase\miPrimerProyectoCsharp\miPrimerProyectoCsharp\obj\Debug\miPrimerProyectoCsharp.exe
 C:\Users\jimmy\Desktop\Repo_clase\miPrimerProyectoCsharp\miPrimerProyectoCsharp\obj\Debug\miPrimerProyectoCsharp.pdb
 C:\Users\jimmy\Desktop\Repo_clase\miPrimerProyectoCsharp\miPrimerProyectoCsharp\obj\Debug\miPrimerProyectoCsharp.exe.config
+C:\Users\jimmy\Desktop\Repo para el parcial\miPrimerProyectoCsharp\miPrimerProyectoCsharp\obj\Debug\miPrimerProyectoCsharp.csproj.AssemblyReference.cache
+C:\Users\jimmy\Desktop\Repo para el parcial\miPrimerProyectoCsharp\miPrimerProyectoCsharp\obj\Debug\miPrimerProyectoCsharp.exe.config
+C:\Users\jimmy\Desktop\Repo para el parcial\miPrimerProyectoCsharp\miPrimerProyectoCsharp\obj\Debug\miPrimerProyectoCsharp.frm_usuarios.resources
+C:\Users\jimmy\Desktop\Repo para el parcial\miPrimerProyectoCsharp\miPrimerProyectoCsharp\obj\Debug\miPrimerProyectoCsharp.Properties.Resources.resources
+C:\Users\jimmy\Desktop\Repo para el parcial\miPrimerProyectoCsharp\miPrimerProyectoCsharp\obj\Debug\miPrimerProyectoCsharp.csproj.GenerateResource.cache
+C:\Users\jimmy\Desktop\Repo para el parcial\miPrimerProyectoCsharp\miPrimerProyectoCsharp\obj\Debug\miPrimerProyectoCsharp.csproj.CoreCompileInputs.cache
+C:\Users\jimmy\Desktop\Repo para el parcial\miPrimerProyectoCsharp\miPrimerProyectoCsharp\obj\Debug\miPrimerProyectoCsharp.exe
+C:\Users\jimmy\Desktop\Repo para el parcial\miPrimerProyectoCsharp\miPrimerProyectoCsharp\obj\Debug\miPrimerProyectoCsharp.pdb
+C:\Users\jimmy\Desktop\Repo para el parcial\miPrimerProyectoCsharp\miPrimerProyectoCsharp\bin\Debug\usuarios.mdf
+C:\Users\jimmy\Desktop\Repo para el parcial\miPrimerProyectoCsharp\miPrimerProyectoCsharp\bin\Debug\usuarios_log.ldf
+C:\Users\jimmy\Desktop\Repo para el parcial\miPrimerProyectoCsharp\miPrimerProyectoCsharp\bin\Debug\miPrimerProyectoCsharp.exe.config
+C:\Users\jimmy\Desktop\Repo para el parcial\miPrimerProyectoCsharp\miPrimerProyectoCsharp\bin\Debug\miPrimerProyectoCsharp.exe
+C:\Users\jimmy\Desktop\Repo para el parcial\miPrimerProyectoCsharp\miPrimerProyectoCsharp\bin\Debug\miPrimerProyectoCsharp.pdb
+C:\Users\jimmy\Desktop\Repo para el parcial\miPrimerProyectoCsharp\miPrimerProyectoCsharp\obj\Debug\miPrimerProyectoCsharp.login.resources
