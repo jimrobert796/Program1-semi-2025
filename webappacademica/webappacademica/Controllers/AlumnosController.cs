@@ -26,6 +26,25 @@ namespace webappacademica.Controllers
         {
             return await _context.Alumnos.ToListAsync();
         }
+        // Busqueda o consulta unicamente por nombre o codigo
+        // GET: api/Alumnos/buscar?buscar={TEXTO}
+        [HttpGet ("buscar")]
+        public async Task<ActionResult<IEnumerable<Alumno>>> BuscarAlumnos([FromQuery]AlumnoBusquedaParametros parametros)
+        {
+            var consulta = _context.Alumnos.AsQueryable(); // variable de busqueda de alumnos
+            if (!string.IsNullOrEmpty(parametros.buscar))
+            {
+                consulta = consulta.Where(Alumno => Alumno.nombre.Contains(parametros.buscar));
+            }
+            if (!string.IsNullOrEmpty(parametros.buscar) && consulta.Count() <= 0)
+            {
+                consulta = _context.Alumnos.AsQueryable();
+                consulta = consulta.Where(Alumno => Alumno.codigo.Contains(parametros.buscar));
+            }
+               
+            return await consulta.ToListAsync();
+        }
+
 
         // GET: api/Alumnos/5
         [HttpGet("{id}")]
@@ -69,7 +88,7 @@ namespace webappacademica.Controllers
                 }
             }
 
-            return NoContent();
+            return CreatedAtAction("GetAlumno", new { id = alumno.idAlumno }, alumno);
         }
 
         // POST: api/Alumnos
