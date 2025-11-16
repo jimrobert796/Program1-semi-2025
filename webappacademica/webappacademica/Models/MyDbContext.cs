@@ -16,6 +16,7 @@ namespace webappacademica.Models
         public DbSet<Alumno> Alumnos { get; set; }
         public DbSet<Materia> Materias { get; set; }
         public DbSet<Docente> Docentes { get; set; }
+        public DbSet<Periodo> Periodos { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -25,6 +26,7 @@ namespace webappacademica.Models
             modelBuilder.Entity<Alumno>().HasKey(a => a.idAlumno);
             modelBuilder.Entity<Materia>().HasKey(a => a.idMateria);
             modelBuilder.Entity<Docente>().HasKey(a => a.idDocente);
+            modelBuilder.Entity<Periodo>().HasKey(a => a.idPeriodo);
         }
 
     }
