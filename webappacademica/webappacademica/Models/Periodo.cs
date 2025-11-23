@@ -8,5 +8,9 @@ namespace webappacademica.Models
         public int idPeriodo { get; set; }
         public DateTime fecha { get; set; }
         public string periodo { get; set; }
+
+        // relacion con tabla matricula
+
+        public ICollection<Matricula> Matriculas { get; set; }
     }
 }

@@ -997,6 +997,13 @@
           "telefono": {
             "type": "string",
             "nullable": true
+          },
+          "matriculas": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Matricula"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1058,6 +1065,34 @@
         },
         "additionalProperties": false
       },
+      "Matricula": {
+        "type": "object",
+        "properties": {
+          "idMatricula": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idAlumno": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idPeriodo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fecha": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "alumno": {
+            "$ref": "#/components/schemas/Alumno"
+          },
+          "periodo": {
+            "$ref": "#/components/schemas/Periodo"
+          }
+        },
+        "additionalProperties": false
+      },
       "Periodo": {
         "type": "object",
         "properties": {
@@ -1071,6 +1106,13 @@
           },
           "periodo": {
             "type": "string",
+            "nullable": true
+          },
+          "matriculas": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Matricula"
+            },
             "nullable": true
           }
         },
