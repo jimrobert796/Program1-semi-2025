@@ -79,11 +79,11 @@
             idPeriodo: obtenerIdForaneo('Periodo'),
             fecha: txtFechaMatricula.value
         },
-            url = 'https://localhost:7005/api/Matriculas',
+            url = 'https://localhost:7099/api/Matriculas',
             method = 'POST';
         if (accion == "modificar") {
             method = 'PUT';
-            url = `https://localhost:7005/api/Matriculas/${idMatricula}`;
+            url = `https://localhost:7099/api/Matriculas/${idMatricula}`;
             datos.idMatricula = idMatricula;
         }
         const respuesta = await fetch(url, {
@@ -109,7 +109,7 @@
         accion = "modificar";
         idMatricula = matricula.idMatricula;
         txtFechaMatricula.value = new Date(matricula.fecha).toLocaleDateString("en-GB").split("/").reverse().join("-");
-        txtAlumnoMatricula.value = matricula.alumno.trim();
-        txtPeriodoMatricula.value = matricula.periodo.trim();
+        txtAlumnoMatricula.value = matricula.alumno.nombre.trim();
+        txtPeriodoMatricula.value = matricula.periodo.periodo.trim();
     }
 </script>
