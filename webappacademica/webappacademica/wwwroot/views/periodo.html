@@ -42,6 +42,10 @@
         e.preventDefault();
         guardarPeriodo();
     });
+    frmPeriodo.addEventListener('reset', e => {
+        e.preventDefault();
+        limpiarDatosPeriodo();
+    });
     async function guardarPeriodo() {
         let datos = {
             fecha: txtFechaPeriodo.value,

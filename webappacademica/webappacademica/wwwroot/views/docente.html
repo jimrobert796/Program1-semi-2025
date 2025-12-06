@@ -71,6 +71,10 @@
         e.preventDefault();
         guardarDocente();
     });
+    frmDocente.addEventListener('reset', e => {
+        e.preventDefault();
+        limpiarDatosDocente();
+    });
     function seleccionarImg(file) {
         let archivo = file.files[0] || '';
         const lector = new FileReader();

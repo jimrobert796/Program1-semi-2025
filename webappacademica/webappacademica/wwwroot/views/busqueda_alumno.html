@@ -42,7 +42,7 @@
             filas = '';
         alumnos.forEach(alumno => {
             filas += `
-                <tr onClick='modificarAlumno(${JSON.stringify(alumno)})'>
+                <tr onClick='mostrarDatosAlumno(${JSON.stringify(alumno)})'>
                     <td>${alumno.codigo}</td>
                     <td>${alumno.nombre}</td>
                     <td>${alumno.direccion}</td>
@@ -68,6 +68,14 @@
                 return;
             }
             listarAlumnos();
+        }
+
+    }
+    function mostrarDatosAlumno(alumno) {
+        if (formActivo == "matricula") {
+            txtAlumnoMatricula.value = alumno.nombre;
+        } else {
+            modificarAlumno(alumno);
         }
     }
 </script>

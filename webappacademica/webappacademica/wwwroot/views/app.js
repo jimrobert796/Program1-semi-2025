@@ -1,4 +1,5 @@
 ﻿
+var formActivo = "";
 document.addEventListener("DOMContentLoaded", e => {
     mnxAcademica.addEventListener("click", event => {
         event.preventDefault();

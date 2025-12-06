@@ -73,7 +73,7 @@ namespace webappacademica.Controllers
         [HttpGet("buscar")]
         public async Task<ActionResult<IEnumerable<object>>> BuscarMatricula([FromQuery] MatriculaBusquedaParametros parametros)
         {
-            var consulta = await _context.Matriculas
+            var consulta = _context.Matriculas
                 .Include(m => m.Alumno)
                 .Include(m => m.Periodo)
                 .Select(m => new {
@@ -95,17 +95,14 @@ namespace webappacademica.Controllers
                         m.Periodo!.fecha,
                         m.Periodo!.periodo
                     }
-                }).ToListAsync();
+                }).AsQueryable();
             if (!string.IsNullOrEmpty(parametros.buscar))
             {
-                consulta = consulta.Where(matricula => matricula.fecha.ToString().Contains(parametros.buscar)).ToList();
+                consulta = consulta.Where(matricula =>
+                   matricula.fecha.ToString().Contains(parametros.buscar) ||
+                   matricula.alumno.nombre.Contains(parametros.buscar));
             }
-            if (!string.IsNullOrEmpty(parametros.buscar) && consulta.Count() <= 0)
-            {
-                //consulta = _context.Matriculas.AsQueryable();
-                //consulta = consulta.Where(matricula => matricula.alumno.Contains(parametros.buscar));
-            }
-            return consulta;
+            return await consulta.ToListAsync();
         }
 
 

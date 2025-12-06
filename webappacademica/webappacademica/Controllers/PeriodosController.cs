@@ -28,20 +28,14 @@ namespace webappacademica.Controllers
         }
         // Busqueda o consulta unicamente por nombre o codigo
         // GET: api/Periodos/buscar
+        // GET: api/Periodos/buscar
         [HttpGet("buscar")]
         public async Task<ActionResult<IEnumerable<Periodo>>> BuscarPeriodo([FromQuery] PeriodoBusquedaParametros parametros)
         {
             var consulta = _context.Periodos.AsQueryable();
             if (!string.IsNullOrEmpty(parametros.buscar))
             {
-                // HECHO PARA QUE RECIBA EL FORMARO 
-                var partes = parametros.buscar.Split('-'); // ["12","11","2025"]
-
-                // convertir a formato BD: yyyy-MM-dd
-                var fechaSql = $"{partes[2]}-{partes[1]}-{partes[0]}";  // "2025-11-12"
-
-                consulta = consulta.Where(p => p.fecha.ToString().Contains(fechaSql));
-
+                consulta = consulta.Where(periodo => periodo.fecha.ToString().Contains(parametros.buscar));
             }
             if (!string.IsNullOrEmpty(parametros.buscar) && consulta.Count() <= 0)
             {

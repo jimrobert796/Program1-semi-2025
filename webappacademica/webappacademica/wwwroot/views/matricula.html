@@ -12,15 +12,22 @@
         <div class="card-body text-secondary">
             <div class="row p-1">
                 <div class="col-3 col-md-2">ALUMNO:</div>
-                <div class="col-9 col-md-4">
-                    <input list="dlsAlumnos" autocomplete="off" type="text" class="form-control" id="txtAlumnoMatricula" name="txtAlumnoMatricula" />
+                <div class="col-8 col-md-4">
+                    <input list="dlsAlumnos" required autocomplete="off" type="text" class="form-control" id="txtAlumnoMatricula" name="txtAlumnoMatricula" />
                     <datalist id="dlsAlumnos"></datalist>
+                </div>
+                <div class="col-1 col-md-1">
+                    <a href='javascript:;' onClick="formActivo = 'matricula'; abrirVentana('busqueda_alumno')" title="Buscar Clientes" id="btnBuscarClienteVenta">
+                        <span class="material-symbols-outlined">
+                            person_search
+                        </span>
+                    </a>
                 </div>
             </div>
             <div class="row p-1">
                 <div class="col-3 col-md-2">PERIODO:</div>
                 <div class="col-9 col-md-4">
-                    <input list="dlsPeriodos" autocomplete="off" type="text" class="form-control" id="txtPeriodoMatricula" name="txtPeriodoMatricula" />
+                    <input list="dlsPeriodos" required autocomplete="off" type="text" class="form-control" id="txtPeriodoMatricula" name="txtPeriodoMatricula" />
                     <datalist id="dlsPeriodos"></datalist>
                 </div>
             </div>
@@ -46,6 +53,10 @@
     frmMatricula.addEventListener('submit', e => {
         e.preventDefault();
         guardarMatricula();
+    });
+    frmMatricula.addEventListener('reset', e => {
+        e.preventDefault();
+        limpiarDatosMatricula();
     });
     mostrarAlumnosMatricula();
     mostrarPeriodosMatricula();
@@ -81,6 +92,14 @@
         },
             url = 'https://localhost:7099/api/Matriculas',
             method = 'POST';
+        if (datos.idAlumno <= 0) {
+            alertify.error("Por favor seleccione el alumno a matricular");
+            return;
+        }
+        if (datos.idPeriodo <= 0) {
+            alertify.error("Por favor seleccione el periodo en el cual se ha de matricular");
+            return;
+        }
         if (accion == "modificar") {
             method = 'PUT';
             url = `https://localhost:7099/api/Matriculas/${idMatricula}`;

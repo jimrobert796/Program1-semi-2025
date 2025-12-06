@@ -38,7 +38,7 @@
                 <div class="col-12 text-center">
                     <input type="submit" class="btn btn-outline-primary" value="Guardar" />
                     <input type="reset" class="btn btn-outline-warning" value="Nuevo" />
-                    <input type="button" class="btn btn-outline-success" value="Buscar" onclick="abrirVentana('busqueda_alumno')" />
+                    <input type="button" class="btn btn-outline-success" value="Buscar" onclick="formActivo = 'alumno'; abrirVentana('busqueda_alumno')" />
                 </div>
             </div>
         </div>
@@ -50,6 +50,10 @@
     frmAlumno.addEventListener('submit', e => {
         e.preventDefault();
         guardarAlumno();
+    });
+    frmAlumno.addEventListener('reset', e => {
+        e.preventDefault();
+        limpiarDatosAlumno();
     });
     async function guardarAlumno() {
         let datos = {

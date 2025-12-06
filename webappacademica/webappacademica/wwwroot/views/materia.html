@@ -46,6 +46,10 @@
         e.preventDefault();
         guardarMateria();
     });
+    frmMateria.addEventListener('reset', e => {
+        e.preventDefault();
+        limpiarDatosMateria();
+    });
     async function guardarMateria() {
         let datos = {
             codigo: txtCodigoMateria.value,
